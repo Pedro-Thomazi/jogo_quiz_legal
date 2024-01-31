@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #000036;
+}
+
+button {
+  pointer-events: all;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+}
+
+#context {
+  width: 100%;
+}
+
+.btn {
+  padding: 15px;
+  width: 250px;
+  font-size: 1.4em;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: .4s;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  width: 60%;
+  margin: auto;
+  color: #fff;
+  background-color: #00001b;
+  border: 2px  solid goldenrod;
+  border-radius: 10px;
+}
+
+.startGame .btnStart {
+  background-color: #360300;
+  color: #fff;
+  border-color: #fff;
+  margin-top: 1.5em;
+}
+
+.startGame .btnStart:hover {
+  background-color: #fff;
+  color: #360300;
+  border-color: #360300;
+}
+
+.header-question {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-question h2,
+.header-question h3 {
+  margin-bottom: .8em;
+}
+
+.emphasis {
+  color: goldenrod;
+}
+
+.textQuestion {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.answers {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.answers h2 {
+  margin-bottom: .6em;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+}
+
+.answers button {
+  margin-bottom: .8em;
+  padding: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.answers input#answer1:checked ~ button.answers1,
+.answers input#answer2:checked ~ button.answers2,
+.answers input#answer3:checked ~ button.answers3,
+.answers input#answer4:checked ~ button.answers4 {
+  background-color: #000061;
+  border-color: goldenrod;
+  color: #fff;
+}
+
+.answers input[type="radio"] {
+  display: none;
+}
+
+.answers .btnNext {
+  cursor: pointer;
+  width: 250px;
+  align-self: center;
+  padding: 10px;
+  background-color: #000061;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin-top: .8em;
+}
+
+/* Div Hidden */
+.hide {
+  display: none;
+}
+
+
+/* end game */
+.endGame p {
+  margin: 1em 0;
+  font-size: 1.3em;
+}
+
+.endGame p span {
+  font-weight: bold;
+}
+
+.btnEndGame {
+  background-color: goldenrod;
+  color: #000;
+}
+
+.btnEndGame:hover {
+  border-color: goldenrod;
+  color: goldenrod;
+  background-color: transparent;
+}
+
+
+/* Imagem */
+#img {
+  width: 250px;
+  margin-bottom: 1em;
+} 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/index.js" defer></script>
+  <title>Jogo do Quiz</title>
+</head>
+
+<body>
+  <main id="main">
+    <div id="context">
+      <div class="div startGame">
+        <h1>Começar um Novo Jogo?</h1>
+        <button class="btn btnStart">Start</button>
+      </div>
+
+      <div class="container-questions">
+        <div class="div question">
+          <header class="header-question">
+            <h2>Pergunta: <span class="emphasis" id="questionId">X</span></h2>
+            <h3>Categoria: <span class="emphasis">Conhecimento Geral</span></h3>
+          </header>
+          <p class="textQuestion"></p>
+
+          <div class="answers">
+              <h2>Respostas: </h2>
+                <input type="radio" name="answers" id="answer1">
+                <input type="radio" name="answers" id="answer2">
+                <input type="radio" name="answers" id="answer3">
+                <input type="radio" name="answers" id="answer4">
+
+                <button class="btnAnswers answers1" for="answer1"></button>
+                <button class="btnAnswers answers2" for="answer2"></button>
+                <button class="btnAnswers answers3" for="answer3"></button>
+                <button class="btnAnswers answers4" for="answer4"></button>
+                <hr>
+                <button type="submit" class="btnNext">Próxima</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="div endGame">
+        <h1>Fim de Jogo!</h1>
+        <p>Seu plcar: <span id="totalCorrects" class="emphasis">X</span> de <span id="totalQuestions"></span></p>
+        <img id="img" src="./imgs/reprovado.png">
+        <button class="btn btnEndGame">Recomeçar</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
